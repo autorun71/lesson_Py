@@ -89,3 +89,11 @@ RegEx.findall('<\w+ \w+', xml)
 result = RegEx.findall('<\w+ \w+ .*>', xml)
 for s in result:
 	xml = xml.replace(s,s.replace(" ",""))
+
+================================================
+Операторы
+
+pass - пустышка
+if a == 1
+    pass
+###
