@@ -97,3 +97,6 @@ pass - пустышка
 if a == 1
     pass
 ###
+d = {'a': 1, 'b': 2}
+for k, v in d.items():
+    print(k, v)
