@@ -1,3 +1,4 @@
+##################################################################################
 import re
 
 regexp = 'a'
@@ -34,3 +35,22 @@ print(split) # ['10', '20', '30-40']
 ### re.subn
 sub = re.subn('a', 'b', s) # Замена
 print(subn) ## vbsyb@mbil.ru
+
+### re.compile
+pattern = re.compile(regexp.re.I)
+pattern.match(s)
+...
+pattern.subn('b', s)
+
+##################################################################################
+
+import re
+
+s = 'Python Programming for the Absolute Beginner'
+r = re.findall('.', s) ## ['P', 'y', 't', 'h', 'o', 'n', ... 'i', 'n', 'n', 'e', 'r']
+# . - любой символ, кроме \n
+# \w - все символы без пробелов
+# [] - задать классы символов [for] - вернет все символы f, o, r = ['o', 'r', 'o', 'r', 'f', 'o', 'r', 'o', 'r']
+
+
+print(r)
