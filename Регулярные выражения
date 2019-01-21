@@ -1,0 +1,34 @@
+import re
+
+regexp = 'a'
+s = 'vasya@mail.ru'
+
+match = re.match(regex, s) рег выраж, строка / Вхождение в начало строки
+
+print(match.group(0)) ## None
+### re.match
+
+regexp = 'v'
+s = 'vasya@mail.ru'
+
+match = re.match(regex, s) рег выраж, строка
+
+print(match.group(0)) ## v
+### re.search
+
+regexp = 'a'
+s = 'vasya@mail.ru'
+
+match = re.search(regex, s) рег выраж, строка / Вхождение в начало строки
+
+print(match.group(0)) ## a
+print(match.group(0), match.start(), match.end()) ## a 1 2 (буква, позиции)
+### re.findall
+
+Ищем все буквы a
+match = re.findall(regex, sб re.I) re.I - регистронезависимый поиск 
+print(match) ## ['a', 'a', 'a'] 
+### re.split
+
+split = re.split('', '10-20-30-40', maxsplit=2)
+print(split) # ['10', '20', '30-40']
