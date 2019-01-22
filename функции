@@ -21,3 +21,11 @@ b = 'xyz'
 c = (None, True, False)
 
 z = list(zip(a, b, c)) # [(1, 'x', None), (2, 'y', True), (3, 'z', False)]
+
+##########
+deg add(x):
+  return lambda y: x + y
+  
+a = add(10)
+
+a(2) # 12
