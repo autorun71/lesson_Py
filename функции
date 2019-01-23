@@ -29,3 +29,27 @@ deg add(x):
 a = add(10)
 
 a(2) # 12
+
+
+########## КЭШИРОВАНИЕ
+import functools
+
+@functools.lru_cache()
+def square(n)
+  print('here')
+  return n ** 2
+  
+print (square(4))
+print (square(4))
+print (square(4))
+print (square(4))
+print (square(4))
+
+#here
+#16
+#16
+#16
+#16
+#16
+
+### ###
